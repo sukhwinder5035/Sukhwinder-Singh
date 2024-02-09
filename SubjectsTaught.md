@@ -1,5 +1,5 @@
 1. Design of Steel Structures-I
-2. Design of Steel Structures (PECE-136)
+2. [Design of Steel Structures (PECE-136)](Sessions.md)
 3. Elements of Earthquake Engineering
 4. Design of High Rise Structure
 5. Plastic Analysis & Design of Steel Structures
