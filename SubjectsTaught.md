@@ -9,4 +9,4 @@
 9. Project Planning and Monitoring
 10. Environment Science
 11. Design of Structures I (B.Architecture)
-12. [Building Materials-I (B.Architecture)](Building Materials-I.md)
+12. [Building Materials-I](Building Materials-I.md)
