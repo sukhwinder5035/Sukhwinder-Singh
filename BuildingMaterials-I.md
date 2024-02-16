@@ -1,2 +1,2 @@
-- [MST's](Sukhwinder-Singh/Files/Building Materials-I/MST.md)
+- [MST's](Sukhwinder-Singh/Files/Building Materials-I/MST-I/MST.md)
 - [Assignments]()
