@@ -1,4 +1,4 @@
-- [MST-I_pdf](sukhwinder5035/Sukhwinder-SIngh/Files/blob/main/MST-I_DSS_PECE-136_JM'24.pdf)
-- [MST-I_docx](sukhwinder5035/Sukhwinder-SIngh/Files/blob/main/MST-I_DSS_PECE-136_JM'24.docx)
+- [MST-I_pdf](sukhwinder5035/Sukhwinder-SIngh/blob/main/Files/MST-I_DSS_PECE-136_JM'24.pdf)
+- [MST-I_docx](sukhwinder5035/Sukhwinder-SIngh/blob/main/Files/MST-I_DSS_PECE-136_JM'24.docx)
 - [MST-II_pdf]()
 - [MST-II_docx]()
