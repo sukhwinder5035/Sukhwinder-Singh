@@ -1,4 +1,2 @@
-- [MST-I](Sukhwinder-Singh\Files\Building Materials-I\MST-I\MST-I_BARCH408-21_Building Materials-I_JM'24.pdf)
-- [MST-II]()
-- [Assignment-I]()
-- [Assignment-II]()
+- [MST's](MST.md)
+- [Assignments]()
