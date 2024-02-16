@@ -8,17 +8,21 @@
 <body>
     <h1>Download Files</h1>
 
-    <button onclick="downloadFile('https://github.com/Sukhwinder5035/Sukhwinder-Singh/blob/main/Files/MST-I_BARCH408-21_BuildingMaterials_JM'24..docx')">Download Docx File</button>
-    <button onclick="downloadFile('https://github.com/Sukhwinder5035/Sukhwinder-Singh/blob/main/Files/MST-I_BARCH408-21_BuildingMaterials_JM'24..pdf')">Download PDF</button>
+    <button onclick="downloadFile('https://github.com/Sukhwinder5035/Sukhwinder-Singh/raw/main/Files/MST-I_BARCH408-21_BuildingMaterials_JM%2724.pdf')">Download PDF</button>
 
     <script>
-        function downloadFile(filename) {
-            const link = document.createElement('a');
-            link.href = `Files/${filename}`;
-            link.download = filename;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+        function downloadFile(fileUrl) {
+            fetch(fileUrl)
+                .then(response => response.blob())
+                .then(blob => {
+                    const link = document.createElement('a');
+                    link.href = window.URL.createObjectURL(blob);
+                    link.download = fileUrl.substring(fileUrl.lastIndexOf('/') + 1);
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                })
+                .catch(error => console.error('Error downloading file:', error));
         }
     </script>
 </body>
