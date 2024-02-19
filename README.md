@@ -1,4 +1,4 @@
 # Sukhwinder-Singh
 (Asst. Prof. CE Department, GNDEC, Ludhiana)
 
-| [About]() | [Qualification]() | [Academics](Sessions.md) | [Research Interest]() | [Subjects Taught](SubjectsTaught.md) | [Downloads](MST-I_BuildingMaterials-I.html) |
+| [About]() | [Qualification]() | [Academics](Sessions.md) | [Research Interest]() | [Subjects Taught](SubjectsTaught.md) | [Downloads](SubjectsTaught.md) |
