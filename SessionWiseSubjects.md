@@ -2,7 +2,7 @@
  | [Jan-May'24](BuildingMaterials-I_Jan-May'24.md) |
 
 - Design of Steel Structures
-  | [Jan-May'24](Design of Steel Structures_Jan-May'24.md) |
+  | [Jan-May'24](DesignOfSteelStructures_Jan-May'24.md) |
 
 - Prestressed Concrete Structures (M.Tech.)
  | [Aug-Dec'22](Aug-Dec'23.md) | [Aug-Dec'22](Aug-Dec'22.md) |
