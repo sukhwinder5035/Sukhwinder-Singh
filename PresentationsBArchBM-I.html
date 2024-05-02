@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Files</title>
+</head>
+<body>
+    <h1>Download Files (JM'24_Design of Steel Structures)</h1>
 
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/Glass-BuildingMaterial.pptx')">Download PPTX (Glass-Building Material)</button>
+    
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/Aluminium-BuildingMaterial.ppt')">Download PPTX (Aluminium-BuildingMaterial)</button>
+
+    
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/PVC&UPVC-BuildingMaterial.pptx')">Download PPTX (PVC & UVPC-BuildingMaterial)</button>
+
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/PaverBlockFlooring-BuildingMaterial.pdf')">Download PDF (PaverBlockFlooring-BuildingMaterial)</button>
+
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/Joineries.pdf')">Download PDF (Joineries)</button>
+
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/CorkSheetFlooringCoverng.pptx')">Download PDF (Cork Sheet (Flooring Covering))</button>
+
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/AsbestosCementSheets.pdf')">Download PDF (Asbestos Cement Sheets)</button>
+
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/PCCFlooring.pdf')">Download PDF (PCC Flooring)</button>
+
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/IndustrialFlooring.pdf')">Download PDF (Industrial Flooring)</button>
+
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/ClayMangloreTilesPVC.pdf')">Download PDF (Clay & Manglore Tiles PVC)</button>
+  
+     <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/MarbleFlooring.pdf')">Download PDF (Marble Flooring)</button>
+
+       <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/TileFlooring.pptx')">Download PPTX (Tile Flooring)</button>
+  
+  <script>
+        function downloadFile(fileUrl) {
+            fetch(fileUrl)
+                .then(response => response.blob())
+                .then(blob => {
+                    const link = document.createElement('a');
+                    link.href = window.URL.createObjectURL(blob);
+                    link.download = fileUrl.substring(fileUrl.lastIndexOf('/') + 1);
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                })
+                .catch(error => console.error('Error downloading file:', error));
+        }
+    </script>
+</body>
+</html>
