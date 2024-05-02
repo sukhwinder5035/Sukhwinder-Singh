@@ -1,0 +1,4 @@
+- [Building Materials-I_B.Arch.](PresentationsBArchBM-I.html)
+- [Prestressed Concrete](PresentationsPSC.html)
+- [Design of Steel Structures](PresentationsDSS.html)
+- [Structure Design-I_B.Arch.](PresentationsSD-I.html)
