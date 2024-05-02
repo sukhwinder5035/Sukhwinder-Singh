@@ -1,4 +1,4 @@
 - [MST-I](DesignOfSteelStructures.html)
-- [MST-II]()
+- [MST-II](DesignOfSteelStructures.html)
 - [Assignment-I]()
 - [Assignment-II]()
