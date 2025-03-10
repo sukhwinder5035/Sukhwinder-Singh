@@ -3,3 +3,5 @@
 - [Prestressed Concrete](PrestressedConcrete_PECE-135.md)
 - [Prestressed Concrete Structures](PrestressedConcreteStructures_MST-124)
 - [Presentations Delivered](PresentationsDelivered.md)
+- [Irrigation Engineering_PECE-115](IrrEngg.html)
+- [Building Construction Practice_PECE-116](BCP.html)
