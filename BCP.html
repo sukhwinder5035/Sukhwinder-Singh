@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Files</title>
+</head>
+<body>
+    <h1>Download Files (JM'Building Construction Practice)</h1>
 
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/MST-I_BCP_JM25.pdf')">Download PDF (MST-I_BM-I_JM'24)</button>
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/MST-I_BCP_JM25.docx')">Download DOCX (MST-I_BM-I_JM'24)</button>
+
+    
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/MST-II_BCP_JM25.pdf')">Download PDF (MST-II_BM-I_JM'24)</button>
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/MST-II_BCP_JM25.docx')">Download DOCX (MST-II_BM-I_JM'24)</button>
+
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/Assignment-I_BCP_JM25.pdf')">Download PDF (Assignment-I_BM-I_JM'24)</button>
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/Assignment-I_BCP_JM25.docx')">Download DOCX (Assignment-I_BM-I_JM'24)</button>
+
+
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/Assignment-II_BCP_JM25.pdf')">Download PDF (Assignment-II_BM-I_JM'24)</button>
+    <button onclick="downloadFile('https://raw.githubusercontent.com/sukhwinder5035/Sukhwinder-Singh/main/Files/Assignment-II_BCP_JM25.docx')">Download DOCX (Assignment-II_BM-I_JM'24)</button>
+  
+    <script>
+        function downloadFile(fileUrl) {
+            fetch(fileUrl)
+                .then(response => response.blob())
+                .then(blob => {
+                    const link = document.createElement('a');
+                    link.href = window.URL.createObjectURL(blob);
+                    link.download = fileUrl.substring(fileUrl.lastIndexOf('/') + 1);
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                })
+                .catch(error => console.error('Error downloading file:', error));
+        }
+    </script>
+</body>
+</html>
